@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^gradelist/$','main.views.gradelist'),
     url(r'^grade/(?P<pk>\d+)/$','main.views.gradedetail'),
     url(r'^subfield/(?P<pk>\d+)/$','main.views.subfielddetail'),
-    url(r'^stage/$','main.views.stage'),
+    url(r'^$','main.views.stage'),
     url(r'^stage/(?P<pk>\d+)/$','main.views.stagedetail'),
     url(r'^teacher/$','main.views.teacher'),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
