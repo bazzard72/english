@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+{% for item in grade.subfield_set.all %}
+	<a href='/subfield/{{item.pk}}/'><p>{{item.name}}</p></a>
+{% endfor %}
+</body>
+</head>
+{% endblock %}

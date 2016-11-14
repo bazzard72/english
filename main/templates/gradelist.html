@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h1>Gradelist</h1>
+
+
+{% for grade in gradelist %}
+
+grade:<a href="/grade/{{ grade.pk }}/">{{grade.name}}</a>
+<p>name:{{grade.name}}</p>
+<br>
+{% endfor%}
+
+<p>مواقع مفيدة</p>
+<a href="http://www.agendaweb.org">http://www.agendaweb.org/a>
+
+{% endblock %}

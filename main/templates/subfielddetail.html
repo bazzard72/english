@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+
+
+<p>file</p>
+<h1>Gradelist</h1>
+
+{% for item in subfield.papersheet_set.all %}
+	<p>{{item.name}} </p><a href="{{item.file.url}}">download</a>
+
+
+
+
+{% endfor%}
+
+
+
+{% endblock %}

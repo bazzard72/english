@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<head>
+	<title></title>
+</head>
+<body>
+	<p></p>
+	
+
+	<div class='row'>
+	<div class='col-md-6'>
+		<img class= 'img-responsive smallsize' style = 'max-width:400px' src="/static/images/ibrahim010.jpg">
+	</div>
+	<div class='col-md-6'>
+		<img class= 'img-responsive' style = 'max-width:400px' src="/static/images/ibrahim08.jpg">
+	</div>
+</div>
+
+
+
+	{% for item in stage.grade_set.all %}
+		<a href='/grade/{{item.pk}}/'><p>{{item.name}}</p></a>
+	{% endfor %}
+</body>
+</head>
+
+
+{% endblock %}

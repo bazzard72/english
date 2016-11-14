@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{%  load staticfiles %}
+
+{% block body %}
+
+
+<h1></h1>
+
+<div class='row'>
+	<div class='col-md-6'>
+		<img class= 'img-responsive smallsize' style = 'max-width:400px' src="/static/images/ibrahim.jpg">
+	</div>
+	<div class='col-md-6'>
+		<img class= 'img-responsive' style = 'max-width:400px' src="/static/images/ibrahim01.jpg">
+	</div>
+</div>
+ 
+
+
+ 
+<br><br><br><br>
+{% for stage in stagelist %}
+
+<a href="/stage/{{ stage.pk }}/">{{stage.name}}</a>
+
+<br>
+{% endfor%}
+
+
+
+
+
+
+
+<p>مواقع مفيدة</p>
+<a href="http://www.agendaweb.org">http://www.agendaweb.org/a>
+
+{% endblock %}
