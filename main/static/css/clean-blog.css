@@ -62,6 +62,14 @@ hr.small {
   text-transform: uppercase;
   font-size: 12px;
 }
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  max-width: 10px;
+  height: 10px;
+}
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;

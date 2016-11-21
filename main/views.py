@@ -37,3 +37,8 @@ def subfielddetail(request,pk):
 def teacher (request):
 	context={}
 	return render(request,'teacher.html',context)
+
+
+
+
+	
