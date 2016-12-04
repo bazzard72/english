@@ -27,3 +27,8 @@ class Papersheet(models.Model):
 	date =models.DateTimeField(auto_now_add=True)
 	user = models.ForeignKey(User)
 
+class Teacher(models.Model):
+	name = models.CharField(max_length=255) 
+
+class Counter(models.Model):
+	number = models.IntegerField()
